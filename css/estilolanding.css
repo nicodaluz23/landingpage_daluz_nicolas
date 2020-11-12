@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-image: url(../img/background.png);
+	background-size: 80%;
+}
+
+main{
+	width: 60%;
+	margin-left: 20%;
+	}
+
+.grid-container{
+display: grid;
+gap: 3px;
+grid-template: 
+		"titular 		titular 	titular" 		auto 
+		"imagen 		imagen 		calltoaction" 	auto
+		"beneficios 	beneficios 	beneficios" 	auto 
+		"testimonios	testimonios	testimonios" 	auto 
+		"rescate		rescate		rescate" 		auto /
+		auto			auto		40%;
+	}
+
+
+.titular{
+	grid-area: titular;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.subtitulo{
+	font-family: 'Montserrat';
+	color: #6D0D34;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.imagen{
+	grid-area: imagen;
+	background-color: #FFFFFF;
+	padding: 1%;
+	background-image: url(../img/vinos.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+
+.beneficios{
+	grid-area: beneficios;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.calltoaction{
+	grid-area: calltoaction;
+	background-color: #2D0618;
+	border-radius: 10%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.testimonios{
+	grid-area: testimonios;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.rescate{
+	grid-area: rescate;
+	background-color: #2D0618;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a{
+	color: #FFFFFF;
+}
+
+h1{
+	color: #6D0D34;
+	font-family: 'Dosis';
+	font-size: 4.2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+h1 span {
+    color:#6D0D34;
+    font-weight: 300;
+    font-size: 4.2rem;
+}
+
+h2{
+	text-align: center;
+	color: #2D0618;
+	font-family: 'Montserrat';
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+h3{
+	font-family: 'Montserrat';
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+h4{
+	color: #2D0618;
+	font-family: 'Montserrat';
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.top{
+	margin-top: 8px;
+}
+
+h5{
+	color: #2D0618;
+	font-family: 'Montserrat';
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 25px;
+	margin-top: 40px;
+}
+
+h6{
+	color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-size: 1.0rem;
+	font-weight: 500;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+form{
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 500;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.tituloform{
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	font-style: italic;
+	margin-left: 12.5%;
+}
+
+
+.boton{
+	width: 50%;
+	height: 50px;
+	background-color: #9E864C;
+	font-size: 1.2rem; color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	padding: 1px;
+	border-radius: 20px;
+	border-color: #FFFFFF;
+	margin-top: 15px;
+	margin-left: 25%;
+}
+
+.textarea1{
+	width: 75%;
+	height: 30px;
+	margin-top: 12px;
+	margin-bottom: 25px;
+	font-size: 0.9rem; color: #6D0D34;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	border-radius: 10px;
+	border-color: #FFFFFF;
+	border-width: 2px;
+	background-color: #FFFFFF;
+	margin-left: 12.5%;
+}
+
+.bullet{
+    background: url('../img/vineta.png') no-repeat;
+    display:inline-block;
+    vertical-align: middle;
+    background-size:100%;
+    height:30px;
+    width:30px;
+    margin-right: 1%;
+}
+
+.foto{
+    background: url('../img/foto.png') no-repeat;
+    display:inline-block;
+    vertical-align: middle;
+    background-size:100%;
+    height:120px;
+    width:120px;
+    margin-right: 2%;
+    float: left;
+}
+
+@media (max-width:800px) and (min-width:481px){
+
+	main{
+		width: 100%;
+		margin: 0;
+	}
+
+	.grid-container{
+
+		grid-template: 
+		"titular 	titular" 	auto 
+		"imagen 	calltoaction" 	auto
+		"imagen 	calltoaction" 		auto
+		"beneficios	beneficios"		auto
+		"testimonios 	testimonios" 	auto
+		"rescate	rescate" auto /
+		 55% 		auto;
+ 	}
+
+ 	.testimonios{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+
+	h5{
+		margin-top: 30px;
+	}
+
+}
+
+
+
+@media (max-width: 481px) {
+
+main{
+width: 100%;
+margin: 0;
+}
+
+.grid-container{
+	grid-template: 
+	"titular" auto
+	"imagen" 300px
+	"beneficios" auto
+	"calltoaction" auto
+	"testimonios" auto
+	"rescate" auto
+	;
+}
+
+.testimonios{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+
+.imagen{
+	background-size: 80%;
+}
+
+h5{
+	margin-top: 20px;
+}
+
+.boton{
+	width: 40%;
+	margin-left: 30%
+}
+
+
+}
